@@ -1,0 +1,197 @@
+:root {
+    --netflixred: #E50914;
+}
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 50rem;
+    box-shadow: 1px 1px 10px var(--netflixred);
+    border-radius: 3rem;
+}
+
+.logo--container {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo--netflix {
+    height: 100%;
+    width: 4rem;
+    padding-top: 2rem;
+}
+
+.show--container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background: transparent; /* testing */
+    width: 90%;
+    overflow: auto; /*make it scroll later*/
+    margin-bottom: 2rem;
+}
+
+.title {
+    color: white;
+    font-family: netflixbold;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.show--card--container {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    color: white;
+}
+.show--card--picture {
+    border-radius: 1rem;
+    width: 25%;
+    height: 100%;
+}
+
+.show--card--title {
+    color: white;
+    font-size: 2.2rem;
+    font-family: netflixbold;
+    padding-left: 1rem;
+
+}
+
+.show--card--info--container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.show--card--netflix {
+    aspect-ratio: 1;
+    width: 1rem;
+    padding-left: 1.1rem;
+}
+
+.show--card--rating {
+    font-family: netflixbold;
+    font-size: 1.2rem;
+    padding-left: .4rem;
+}
+
+.rating--span {
+    font-family: netflixlight;
+    color: var(--netflixred);
+}
+
+.rating--container {
+    display: flex;
+    width: 100%;
+}
+
+.show--card--seasons {
+    font-size: 1.2rem;
+    font-family: netflixbold;
+    padding-left: 1.2rem;
+}
+
+.show--card--episodes {
+    font-family: netflixlight;
+    color: var(--netflixred);
+}
+
+.show--card--description {
+    font-family: netflixlight;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+    max-width: 90%;
+    padding-left: 1.2rem;
+    height: 50%;
+}
+
+.show--card-button {
+    background: var(--netflixred);
+    color: white;
+}
+
+.anchor--link {
+    text-decoration: none;
+}
+
+.show--card--button {
+    --initialTextColor: white;
+    --slideTextColor: black;
+
+    --initialBgColor: transparent;
+    --slideBgColor: #E50914;
+
+    color: var(--initialTextColor);
+
+    background-image: linear-gradient(90deg,
+        var(--initialBgColor) 0%,
+        var(--initialBgColor) 50%,
+        var(--slideBgColor) 50%,
+        var(--slideBgColor) 100%);
+    background-size: 200%;
+    transition: background-position .3s cubic-bezier(.47, .1, 1, .63),
+      color .2s linear;
+    transition-delay: 0.0s, 0.15s;
+
+    width: 90%;
+    margin-left: .9rem;
+    margin-top: -.5rem;
+    color: white;
+    text-decoration: none;
+    font-family: netflixbold;
+    font-size: 1.5rem;
+    padding: 0rem .3rem .3rem .3rem;
+    display: flex;
+    align-items: center;
+}
+
+.show--card--button:hover {
+    color: var(--slideTextColor);
+    cursor: pointer;
+    background-position: -100% 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #141414;
+    border-radius: 20px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--netflixred);
+  }
+
+

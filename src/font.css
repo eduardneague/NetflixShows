@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "netflixLight";
+    src: local('NetflixSans-Light'),
+    url('./fonts/NetflixSans-Light.otf') format("truetype");
+}
+
+@font-face {
+    font-family: "netflixBold";
+    src: local('NetflixSans-Bold'),
+    url('./fonts/NetflixSans-Bold.otf') format("truetype");
+}
+
+@font-face {
+    font-family: "netflixMedium";
+    src: local('NetflixSans-Medium'),
+    url('./fonts/NetflixSans-Medium.otf') format("truetype");
+}
+
+@font-face {
+    font-family: "netflixRegular";
+    src: local('NetflixSans-Regular'),
+    url('./fonts/NetflixSans-Regular.otf') format("truetype");
+}
