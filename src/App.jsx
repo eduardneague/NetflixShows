@@ -35,7 +35,7 @@ function App() {
       <div className="container">
 
         <div className="logo--container">
-            <img className = "logo--netflix" src="./src/assets/netflixLogo.png"/>
+            <img className = "logo--netflix" src="./public/pictures/netflixLogo.png"/>
         </div>
 
         <h1 className = "title">Favorite Netflix Shows</h1>
