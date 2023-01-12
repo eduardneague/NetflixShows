@@ -12,7 +12,7 @@ function Show(props) {
                 <span className = "show--card--episodes"> {props.show.episodes} EPISODES</span></p>
 
                 <div className = "rating--container">
-                    <img className = "show--card--netflix" src = './public/pictures/netflixLogo.png'/>
+                    <img className = "show--card--netflix" src = '../pictures/netflixLogo.png'/>
                     <p className = "show--card--rating">Rating:
                     <span className = "rating--span"> {props.show.rating}/10</span></p>
                 </div>
