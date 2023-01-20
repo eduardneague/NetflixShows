@@ -49,5 +49,16 @@ export default [
         episodes: '190',
         link: 'https://www.netflix.com/search?q=jojo&jbv=80179831',
         rating: '8.2'
+    },
+    {
+        id: "6",
+        title: "NARCOS",
+        coverImg: 'narcos.jpg',
+        description: "Set and filmed in Colombia, seasons 1 and 2 are based on the story of Colombian narcoterrorist and drug kingpin Pablo Escobar, who is the leader of the Medellin Cartel and became a billionaire through the production and distribution of cocaine.",
+        seasons: '3',
+        episodes: '30',
+        link: 'https://www.netflix.com/search?q=narcos&jbv=80025172',
+        rating: '8.8'
     }
+
 ]
