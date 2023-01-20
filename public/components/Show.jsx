@@ -8,8 +8,8 @@ function Show(props) {
             <div className="show--card--info--container">
                 <h1 className = "show--card--title">{props.show.title}</h1>
 
-                <p className = "show--card--seasons">{props.show.seasons} SEASON 
-                <span className = "show--card--episodes"> {props.show.episodes} EPISODES</span></p>
+                <p className = "show--card--seasons">{props.show.seasons} {props.show.seasons > 1 ? "SEASONS" : "SEASON"}
+                <span className = "show--card--episodes"> {props.show.episodes} {props.show.episodes > 1 ? "EPISODES" : "EPISODE"}</span></p>
 
                 <div className = "rating--container">
                     <img className = "show--card--netflix" src = '../pictures/netflixLogo.png'/>
